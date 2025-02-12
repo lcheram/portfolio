@@ -1,0 +1,44 @@
+h1 {
+  font-family: "DINdong";
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  //text-orientation: sideways-right;
+  //padding-inline-end: var(--h2-sz);
+  margin-block-end: 1rem;
+  padding-inline: 0;
+}
+
+h2, h3, a, li {
+  font-family: "Bricolage Grotesque";
+  color: var(--txt-color);
+}
+
+p {
+  font-family: "DINdong";
+  font-size: var(--h2-sz);
+}
+
+.wrapper {
+  padding-inline: var(--h2-sz);
+}
+
+.hero {
+  display: flex;
+  margin-block: 4rem 3rem;
+  &__title {
+    font-size: var(--h1-sz);
+  }
+  &__contant {
+    display: flex;
+  }
+  &__para {
+    font-family: "Bricolage Grotesque";
+    font-size: var(--h1-sz);
+    margin-block: 0;
+    padding-block: 0;
+    max-width: 55%;
+    &-second {
+      max-width: 55%;
+    }
+  }
+}

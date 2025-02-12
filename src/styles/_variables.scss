@@ -1,0 +1,15 @@
+:root {
+  --bg-color: #FDFFED;
+  --txt-color: #171616;
+  --main-color: #E6FF00;
+  --pink-color: #FF00A2;
+    
+  --h1-sz: 3rem;
+  --h2-sz: 1.5rem;
+  --h3-sz: 0.5rem;
+    
+  --btn-pd: calc(var(--h3-sz) *2) var(--h2-sz); //vérifier valeurs padding
+  --btn-rad: calc(var(--h2--sz) /10); //vérifier valeurs
+  --btn-bd: 1.5px solid var(--txt-color);
+  --btn-bdactivated: 1.5px solid var(--pink-color);
+  }
