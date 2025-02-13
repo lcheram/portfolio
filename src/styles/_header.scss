@@ -27,6 +27,7 @@ header {
   flex-direction: column;
   justify-content: end;
   align-items: end;
+  margin-block-start: 1rem;
   &_item {
     font-family: "DINdong";
     text-transform: uppercase;

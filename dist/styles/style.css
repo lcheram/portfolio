@@ -95,6 +95,7 @@ header {
   flex-direction: column;
   justify-content: end;
   align-items: end;
+  margin-block-start: 1rem;
 }
 .main__nav_list_item {
   font-family: "DINdong";
@@ -273,6 +274,7 @@ p {
   display: flex;
   justify-content: space-around;
   gap: 1rem;
+  overflow-x: scroll;
 }
 
 .scroll_grid_img {
@@ -291,7 +293,7 @@ p {
 }
 */
 .scroll_grid_img_zines {
-  max-width: 25%;
+  max-width: 30%;
 }
 
 form {
@@ -314,6 +316,8 @@ footer {
 .main__footer {
   background-color: var(--main-color);
   padding-inline: var(--h1-sz);
+  padding-top: 1rem;
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -332,7 +336,7 @@ footer {
 }
 .main__footer__section__copyright {
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
 }
 .main__footer__section__copyright p {
   font-size: var(--h3-sz);
@@ -340,4 +344,12 @@ footer {
 
 .main__footer__section__copyright p {
   font-size: var(--h3-sz);
+  position: relative;
+}
+
+.fleche {
+  width: 5%;
+  position: fixed;
+  bottom: 1rem;
+  right: 3rem;
 }

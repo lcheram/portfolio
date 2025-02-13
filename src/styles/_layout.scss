@@ -122,6 +122,7 @@ p {
   display: flex;
   justify-content: space-around;
   gap: 1rem;
+  overflow-x: scroll;
 }
 
 .scroll_grid_img {
@@ -143,7 +144,7 @@ p {
 
 // illu
 .scroll_grid_img_zines {
-  max-width: 25%;
+  max-width: 30%;
 }
 
 // about me 
