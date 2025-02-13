@@ -2,14 +2,30 @@
   font-family: "DINdong";
   src:
     local("DINdong"),
-    url("dist/webfonts/DINdong.ttf") format("ttf");
+    url("dist/webfonts/DINdong.woff2") format("woff2");
 }
-
 
 @font-face {
   font-family: "Bricolage Grotesque";
   src:
     local("Bricolage Grotesque"),
-    url("dist/webfonts/BricolageGrotesque_ExtraBold.ttf") format("ttf");
+    url("dist/webfonts/BricolageGrotesque_.woff2") format("woff2");
 }
 
+/*@font-face {
+  font-family: "Bricolage Grotesque";
+  src:
+    local("Bricolage Grotesque"),
+    url("dist/webfonts/BricolageGrotesque_ExtraBold.ttf") format("ttf");
+}*/
+
+
+/*.bricolage-grotesque-<uniquifier> {
+  font-family: "Bricolage Grotesque", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+*/

@@ -1,3 +1,38 @@
 footer {
   background-color: var(--main-color);
+  display: flex;
+  margin-block: 4rem 3rem;
+}
+
+.main__footer {
+  background-color: var(--main-color);
+  padding-inline: 1rem;
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__sections {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__section {
+    &__socials {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding-block-start: 2rem;
+    }
+    &__copyright {
+    display: flex;
+    justify-content: flex-end;
+    p {
+      font-size: var(--h3-sz);
+    }
+    }
+  }
+  
+}
+
+.main__footer__section__copyright p {
+  font-size: var(--h3-sz);
 }

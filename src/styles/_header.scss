@@ -1,41 +1,53 @@
 header {
   background-color: var(--main-color);
-  padding-inline: var(--h2-sz);
   font-family: "Bricolage Grotesque";
+  padding-inline: var(--h2-sz);
 }
 
 .main__nav {
+  display: flex;
+  justify-content: space-between;
+  &_list {
+    display: none; // flex pour réapparaître mais tout est cassé
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+/*.main__nav {
   display: flex;
   justify-content: space-between;
   &_logo {
     padding-block: var(--h3-sz);
   }
   &_list {
-    //display: flex;
-    display: none;
+    display: flex;
+    //display: none;
     gap: var(--h3-sz);
     justify-content: flex-end;
     align-items: center;
-    &_item {
-      //padding-inline: var(--h2-sz);
-      color: var(--txt-color);
-      border: var(--btn-bd);
-      padding: var(--btn-pd);
-      border-radius: 5px;
-      font-family: "Bricolage Grotesque";
-      &:hover {
-        background-color: var(--pink-color);
-        border: var(--btn-bdactivated);
-        transition: all 200ms linear;
-        a {
-          color: var(--main-color);
-        }
-      }
-    }
   }
 }
 
-.btn_contact {
+.btn_menu {
+  padding: var(--btn-pd);
+  border: var(--btn-bd);
+  border-radius: 5px;
+}
+
+/*.main__nav_item li {
+  &:hover {
+    background-color: var(--pink-color);
+    border: var(--btn-bdactivated);
+    transition: all 200ms linear;
+    a {
+      color: var(--main-color);
+    }
+  }
+}*/
+
+
+/*.btn_contact {
   padding: var(--btn-pd);
   border: var(--btn-bd);
   //border-radius: var(--btn-rad); //ne fonctionne pas mais je ne sais pas pourquoi
@@ -48,9 +60,9 @@ header {
       color: var(--main-color);
     }
   }
-}
+}*/
 
-.main__nav a {
+/*.main__nav a {
   color: var(--text-color);
   font-size: var(--h2-sz);
-}
+}*/
