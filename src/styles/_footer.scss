@@ -6,7 +6,7 @@ footer {
 
 .main__footer {
   background-color: var(--main-color);
-  padding-inline: 1rem;
+  padding-inline: var(--h1-sz);
   &__container {
     display: flex;
     flex-direction: column;

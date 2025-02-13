@@ -7,6 +7,7 @@
 body {
   margin: 0;
   height: 100dvh;
+  background-color: var(--bg-color);
 }
 
 ul {
@@ -16,6 +17,19 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--txt-color);
+}
+
+section {
+  padding-block-end: 3rem;
+}
+
+h2 {
+  background-color: var(--main-color);
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border: var(--btn-bd);
+  border-radius: 30px;
 }
 
 :root {
@@ -58,17 +72,48 @@ a {
 header {
   background-color: var(--main-color);
   font-family: "Bricolage Grotesque";
-  padding-inline: var(--h2-sz);
+  padding-inline: var(--h1-sz);
+}
+
+.star_fly {
+  position: absolute;
+  z-index: -1;
+  width: 40%;
+  right: -20%;
+  top: -35%;
 }
 
 .main__nav {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
+.main__nav_logo {
+  align-self: start;
+  margin-block-start: 1rem;
+}
+
 .main__nav_list {
-  display: none;
-  justify-content: flex-end;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+.main__nav_list_item {
+  font-family: "DINdong";
+  text-transform: uppercase;
+  color: var(--txt-color);
+  margin-block-end: 0.4rem;
+  margin-inline: 0.5rem;
+  padding-block: 0.2rem;
+  padding-inline: 0.8rem;
+  border: 1px solid var(--txt-color);
+  border-radius: 30px;
+  background-color: var(--main-color);
+}
+.main__nav_list_item:hover {
+  background-color: var(--bg-color);
+  transition: all 250ms;
 }
 
 /*.main__nav {
@@ -123,14 +168,15 @@ header {
 h1 {
   font-family: "DINdong";
   writing-mode: vertical-lr;
+  direction: rtl;
   transform: rotate(180deg);
   margin-block-start: 2rem;
-  margin-inline-end: 3.5rem;
+  margin-inline: 0;
   padding-inline: 0;
-  justify-self: flex-end;
+  justify-self: end;
 }
 
-h2, h3, a, li {
+h2, h3 {
   font-family: "Bricolage Grotesque";
   color: var(--txt-color);
 }
@@ -142,17 +188,18 @@ p {
 }
 
 .sec__nav_list {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
 }
 .sec__nav_list_item {
-  font-family: "Grotesque Bricolage";
+  font-family: "DINdong";
+  text-transform: uppercase;
   margin-block-end: 0.5rem;
-  padding-block: 0.5rem;
-  padding-inline: 1rem;
+  padding-block: 0.3rem;
+  padding-inline: 0.8rem;
   border: 1px solid var(--txt-color);
-  border-radius: 5px;
+  border-radius: 30px;
   background-color: var(--main-color);
 }
 .sec__nav_list_item:hover {
@@ -164,16 +211,17 @@ p {
 }
 
 .wrapper {
-  padding-inline: var(--h2-sz);
+  padding-inline: var(--h1-sz);
 }
 
 .hero {
   display: flex;
-  margin-block: 4rem 3rem;
+  margin-block-start: 3rem;
 }
 .hero__title {
   font-size: calc(var(--h1-sz) * 3 / 2);
   margin-block-end: 1rem;
+  margin-block-start: 0;
   justify-self: flex-end;
 }
 .hero__contant {
@@ -194,6 +242,30 @@ p {
   font-family: "Bricolage Grotesque";
 }
 
+.content_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+.title_btn_style {
+  width: 100%;
+  justify-self: end;
+}
+
+.scroll_grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.scroll_grid_img {
+  width: 45%;
+  border: 1px solid pink;
+  padding: 1rem;
+}
+
 footer {
   background-color: var(--main-color);
   display: flex;
@@ -202,7 +274,7 @@ footer {
 
 .main__footer {
   background-color: var(--main-color);
-  padding-inline: 1rem;
+  padding-inline: var(--h1-sz);
 }
 .main__footer__container {
   display: flex;

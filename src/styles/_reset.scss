@@ -7,6 +7,7 @@
 body {
   margin: 0;
   height: 100dvh;
+  background-color: var(--bg-color);
 }
 
 ul {
@@ -16,4 +17,17 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--txt-color);
+}
+
+section {
+  padding-block-end: 3rem;
+}
+
+h2 {
+  background-color: var(--main-color);
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border: var(--btn-bd);
+  border-radius: 30px;
 }
