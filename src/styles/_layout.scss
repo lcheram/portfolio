@@ -108,12 +108,17 @@ p {
 }
 
 .content_section h2 {
-  justify-self: end;
+  align-self: end;
+}
+
+.content_section p {
+    width: 50%;
+    align-self: end;
 }
 
 .title_btn_style {
-  width: 100%;
-  justify-self: end;
+  width: fit-content;
+//   justify-self: end;
 }
 
 // grid scroll img picture
