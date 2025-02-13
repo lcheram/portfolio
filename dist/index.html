@@ -18,11 +18,11 @@
     <img class="main__nav_logo" src="images/logo-test.svg" alt="logo syl d'ortie">
     <img class="star_fly" src="images/star-fly.svg" alt="etoile de folie">
     <ul class="main__nav_list">
-      <li class="main__nav_list_item btn_menu"><a href="#">UX-UI Design</a></li>
-      <li class="main__nav_list_item btn_menu"><a href="#">Illustration</a></li>
-      <li class="main__nav_list_item btn_menu"><a href="#">Zines</a></li>
-      <li class="main__nav_list_item btn_menu"><a href="#">More about me</a></li>
-      <li class="main__nav_list_item btn_menu btn_contact"><a href="#">Contact</a></li>
+      <li class="main__nav_list_item btn_menu"><a href="#ux-ui-design">UX-UI Design</a></li>
+      <li class="main__nav_list_item btn_menu"><a href="#illu">Illustration</a></li>
+      <li class="main__nav_list_item btn_menu"><a href="#zines">Zines</a></li>
+      <li class="main__nav_list_item btn_menu"><a href="#about">More about me</a></li>
+      <li class="main__nav_list_item btn_menu btn_contact"><a href="#form">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -47,10 +47,11 @@
   </div>
   </section>
 
-  <section class="screens">
+  <section class="screens" id="ux-ui-design">
     <div class="content_section">
       <h2 class="title_btn_style">UX-UI Design</h2>
-      <p>Currently student at the competences’ center Cepegra (forem), I’m eager to learn more. Here are my two first projects. Click on them to discover more about it !</p>
+      <p>Currently student at the competences’ center Cepegra (forem), I’m eager to learn more.</p>
+      <p>Here are my two first projects. Click on them to discover more about it</p>
     </div>
     
     <div class="scroll_grid">
@@ -61,10 +62,10 @@
     </div>
   </section>
 
-  <section class="illu">
+  <section class="illu" id="illu">
     <div class="content_section">
     <h2 class="title_btn_style">Illustrations</h2>
-    <p>I’ve always drawn and will never stop. More recently I decided to embrace my queerness by representing it, as well as other interests of mine.</p>
+    <p>I’ve always drawn and will never stop. More recently I decided to embrace my queerness by representing it, as well as other interests of mine</p>
   </div>
     <div class="scroll-grid">
       <img class="scroll_grid_img" src="" alt="">
@@ -74,29 +75,29 @@
     </div>
   </section>
 
-  <section class="zines">
+  <section class="zines" id="zines">
     <div class="content_section">
     <h2 class="title_btn_style">Zines</h2>
     <p>My first zine is still in progress and will be about my experience as an art model. Here are the first pages. Enjoy <3</p>
   </div>
-    <div class="scroll-grid">
-      <img class="scroll_grid_img" src="" alt="">
-      <img class="scroll_grid_img" src="" alt="">
-      <img class="scroll_grid_img" src="" alt="">
-      <img class="scroll_grid_img" src="" alt="">
+    <div class="grid-test scroll_grid">
+      <img class="scroll_grid_img scroll_grid_img_zines" src="images/fanzine1.webp" alt="">
+      <img class="scroll_grid_img scroll_grid_img_zines" src="images/fanzine2.webp" alt="">
+      <img class="scroll_grid_img scroll_grid_img_zines" src="images/fanzine3.webp" alt="">
+      <img class="scroll_grid_img scroll_grid_img_zines" src="images/fanzine4.webp" alt="">
     </div>
   </section>
 
-  <section class="about_me">
+  <section class="about_me" id="about">
     <div class="content_section">
     <h2 class="title_btn_style">More about me</h2>
-    <p>Chaotic they/them, I hope my existence can destroy the French language.
+    <p>Chaotic they/them, I hope my existence can destroy the French language
     </p>
     <p>I have always drawn and will never stop.</p>
-      <p>Since October 2024, I’ve been training at the Cepegra skills center (forem) to fully become a UX-UI Web designer.</p>
-      <p>Looking for a 2 month’s long internship right now.</p>
+      <p>Since October 2024, I’ve been training at the Cepegra skills center (forem) to fully become a UX-UI Web designer</p>
+      <p>Looking for a 2 month’s long internship right now</p>
     </div>
-    <div class="scroll-grid">
+    <div class="scroll-grid icons_img">
       <img class="scroll_grid_img" src="" alt="">
       <img class="scroll_grid_img" src="" alt="">
       <img class="scroll_grid_img" src="" alt="">
@@ -104,22 +105,27 @@
     </div>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="form">
     <div class="content_section">
     <h2 class="title_btn_style">Contact me</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos libero a voluptatibus itaque incidunt! Eaque.</p>
   </div>
-    <form action="">
-      <input type="text">
-      <input type="text">
-      <input type="text">
+  <div class="form"></div>
+    <form action="" method="get">
+      <label for="fname">First name</label>
+      <input type="text" id="fname" name="fname">
+      <label for="sname">Surname</label>
+      <input type="text" id="sname" name="sname">
+      <label for="message">Your message</label>
+      <input type="text" id="message" name="message">
+      <label for="submit"></label>
+      <input type="submit">
     </form>
   </div>
   </section>
 </main>
 
 <footer class="main__footer">
-  <section class="main__footer__container">
     <div class="main__footer__sections">
 
       <div class="main__footer__section">
@@ -137,19 +143,27 @@
           <li class="main__footer__link"><a href="#">Mention légales</a></li>
         </ul>
       </div>
+
+      <div class="main__footer__section">
+        <h3 class="main__footer__title">Social</h3>
+        <ul class="main__footer__list">
+          <li class="main__footer__link"><a href="https://www.linkedin.com/in/lara-cheramy-a61a21160/" class="social__icon">LinkedIn</a></li>
+          <li class="main__footer__link"><a href="https://www.instagram.com/syl_dortie/" class="social__icon">Instagram</a></li>
+          <li class="main__footer__link"><a href="https://www.behance.net/laracheramy" class="social__icon">Behance</a></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="main__footer__section__socials">
+    <!--<div class="main__footer__section__socials">
       <a href="https://www.linkedin.com/in/lara-cheramy-a61a21160/" class="social__icon">LinkedIn</a>
       <a href="https://www.instagram.com/syl_dortie/" class="social__icon">Instagram</a>
       <a href="https://www.behance.net/laracheramy" class="social__icon">Behance</a>
-    </div>
+    </div>-->
     
     <div class="main__footer__section__copyright">
       <p>©Syl Ortie, tous droits réservés, 2025</p>
     </div>
 
-  </section>
 </footer>
 
 </body>

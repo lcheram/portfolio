@@ -7,22 +7,21 @@ footer {
 .main__footer {
   background-color: var(--main-color);
   padding-inline: var(--h1-sz);
-  &__container {
-    display: flex;
+  display: flex;
     flex-direction: column;
-    width: 100dvh;
-  }
+    width: 100%;
   &__sections {
     display: flex;
     justify-content: space-between;
   }
   &__section {
-    &__socials {
+    /*&__socials {
     display: flex;
     justify-content: space-around;
     gap: 2rem;
     padding-block-start: 2rem;
-    }
+    }*/
+    //scroll-behavior: smooth;
     &__copyright {
     display: flex;
     justify-content: flex-end;

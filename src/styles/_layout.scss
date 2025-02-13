@@ -27,6 +27,13 @@ h2 {
 
 }
 
+.wrapper {
+  padding-inline: var(--h1-sz);
+}
+
+
+// hero ---
+
 .hero p {
   direction: ltr;
   max-width: 55%;
@@ -63,11 +70,6 @@ p {
   }
 }
 
-.wrapper {
-  padding-inline: var(--h1-sz);
-}
-
-
 .hero {
   display: flex;
   margin-block-start: 3rem;
@@ -96,6 +98,8 @@ p {
   font-family: "Bricolage Grotesque", arial;
 }
 
+// sections content h2 & p
+
 .content_section {
   display: flex;
   flex-direction: column;
@@ -112,13 +116,46 @@ p {
   justify-self: end;
 }
 
+// grid scroll img picture
+
 .scroll_grid {
   display: flex;
   justify-content: space-around;
   gap: 1rem;
 }
+
 .scroll_grid_img {
   width: 45%;
   border: 1px solid pink;
   padding: 1rem;
+}
+
+/*.grid-test {
+  display: grid;
+  grid-template-columns: none;
+  grid-auto-flow: column;
+  grid-auto-columns: 200px;
+  overflow-x: scroll; //sensé faire scroll sur la div mais fais le scroll sur tout le wrapper ça saoule là
+  //overflow: scroll;
+}
+*/
+// screens 
+
+// illu
+.scroll_grid_img_zines {
+  max-width: 25%;
+}
+
+// about me 
+
+// contact
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+input {
+  max-width: 400px;
+  padding-inline: 1rem;
 }
