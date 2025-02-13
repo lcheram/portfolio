@@ -10,10 +10,11 @@ footer {
   &__container {
     display: flex;
     flex-direction: column;
+    width: 100dvh;
   }
   &__sections {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   &__section {
     &__socials {

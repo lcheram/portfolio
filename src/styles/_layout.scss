@@ -17,12 +17,27 @@ h2, h3 {
   color: var(--txt-color);
 }
 
+h2 {
+  background-color: var(--main-color);
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border: var(--btn-bd);
+  border-radius: 30px;
+  direction: rtl;
+
+}
+
+.hero p {
+  direction: ltr;
+  max-width: 55%;
+
+}
+
 p {
   font-family: "DINdong";
   font-size: var(--h2-sz);
-  max-width: 55%;
+  direction: rtl;
 }
-
 
 .sec__nav_list {
   //display: flex;
@@ -53,7 +68,6 @@ p {
 }
 
 
-
 .hero {
   display: flex;
   margin-block-start: 3rem;
@@ -67,7 +81,7 @@ p {
     display: flex;
   }
   &__para {
-    font-family: "Bricolage Grotesque";
+    font-family: "Bricolage Grotesque", arial;
     font-size: var(--h1-sz);
     margin-block: 0;
     padding-block: 0;
@@ -79,14 +93,18 @@ p {
 }
 
 .hero__para p {
-  font-family: "Bricolage Grotesque";
+  font-family: "Bricolage Grotesque", arial;
 }
 
 .content_section {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-content: flex-end;
+  justify-content: end;
+  align-content: end;
+}
+
+.content_section h2 {
+  justify-self: end;
 }
 
 .title_btn_style {

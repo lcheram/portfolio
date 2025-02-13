@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  //width: 100vh;
   height: 100dvh;
   background-color: var(--bg-color);
 }
@@ -24,10 +25,3 @@ section {
   padding-block-end: 3rem;
 }
 
-h2 {
-  background-color: var(--main-color);
-  padding-inline: 1rem;
-  padding-block: 0.5rem;
-  border: var(--btn-bd);
-  border-radius: 30px;
-}
