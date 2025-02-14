@@ -1,3 +1,5 @@
+
+
 h1 {
   font-family: "DINdong";
   writing-mode: vertical-lr;
@@ -137,7 +139,10 @@ p {
 }
 
 .scroll_grid_img {
-  width: 35%;
+  //max-width: 20%;
+  //max-height: 30%;
+  max-width: 744px;
+  max-height: 438px;
   border-radius: 10px;
 }
 
@@ -155,11 +160,11 @@ p {
 
 // illu
 .scroll_grid_img_zines {
-  max-width: 30%;
+  max-width: 70%;
 }
 
-.scroll_grid_illu {
-  max-width: 25%;
+img.scroll_grid_illu {
+  //min-width: 50%;
   border-radius: 10px;
 }
 
@@ -169,11 +174,26 @@ p {
 form {
   display: flex;
   flex-direction: column;
-  justify-content: end;
   align-items: end;
+  gap: 0.5rem;
+}
+
+label {
+  font-family: "DINdong";
+  margin-block-start: 1rem;
 }
 
 input {
-  max-width: 400px;
+  background-color: #f2fd8f;
+  padding-block: 0.5rem;
   padding-inline: 1rem;
+  margin-block: 0.5rem;
+  border-radius: 5px;
+  border: var(--btn-bd);
+  font-family: "Bricolage Grotesque";
+  font-size: 1rem;
+  color: var(--txt-color);
+  &:focus {
+      background-color: var(--main-color);
+  }
 }
