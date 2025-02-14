@@ -10,6 +10,7 @@ h1 {
   margin-inline: 0;
   padding-inline: 0;
   justify-self: end;
+  font-size: var(--h1-sz);
 }
 
 h2, h3 {
@@ -24,7 +25,11 @@ h2 {
   border: var(--btn-bd);
   border-radius: 30px;
   direction: rtl;
+  font-size: var(--h2-sz);
+}
 
+h3 {
+  font-size: var(--h3-sz);
 }
 
 .wrapper {
@@ -37,12 +42,11 @@ h2 {
 .hero p {
   direction: ltr;
   max-width: 55%;
-
 }
 
 p {
   font-family: "DINdong";
-  font-size: var(--h2-sz);
+  font-size: var(--p-sz);
   direction: rtl;
 }
 
@@ -128,13 +132,15 @@ p {
   justify-content: space-around;
   gap: 1rem;
   overflow-x: scroll;
+  //scroll-snap-align: start;
+  //scroll-snap-type: mandatory;
 }
 
 .scroll_grid_img {
-  width: 45%;
-  border: 1px solid pink;
-  padding: 1rem;
+  width: 35%;
+  border-radius: 10px;
 }
+
 
 /*.grid-test {
   display: grid;
@@ -152,6 +158,11 @@ p {
   max-width: 30%;
 }
 
+.scroll_grid_illu {
+  max-width: 25%;
+  border-radius: 10px;
+}
+
 // about me 
 
 // contact
@@ -159,6 +170,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  align-items: end;
 }
 
 input {

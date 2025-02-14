@@ -45,4 +45,11 @@ footer {
   position: fixed;
   bottom: 1rem;
   right: 3rem;
+  opacity: 20%;
+  transition: all linear 200ms;
+  &:hover {
+    opacity: 100%;
+    border-radius: 30px;
+    background-color: var(--main-color);
+  }
 }

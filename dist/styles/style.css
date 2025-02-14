@@ -13,6 +13,7 @@ body {
   margin: 0;
   height: 100dvh;
   background-color: var(--bg-color);
+  overflow-x: hidden;
 }
 
 ul {
@@ -34,9 +35,10 @@ section {
   --txt-color: #171616;
   --main-color: #E6FF00;
   --pink-color: #FF00A2;
-  --h1-sz: 3rem;
-  --h2-sz: 1.5rem;
-  --h3-sz: 0.5rem;
+  --h1-sz: 3.5vw;
+  --h2-sz: 2.5vw;
+  --h3-sz: 1.5vw;
+  --p-sz: 2vw;
   --btn-pd: calc(var(--h3-sz) *2) var(--h2-sz);
   --btn-rad: calc(var(--h2--sz) /10);
   --btn-bd: 1.5px solid var(--txt-color);
@@ -45,11 +47,11 @@ section {
 
 @font-face {
   font-family: "DINdong";
-  src: local("DINdong"), url("dist/webfonts/DINdong.woff2") format("woff2");
+  src: local("DINdong"), url("/dist/webfonts/DINdong.woff2") format("woff2");
 }
 @font-face {
   font-family: "Bricolage Grotesque";
-  src: local("Bricolage Grotesque"), url("dist/webfonts/BricolageGrotesque_.woff2") format("woff2");
+  src: local("Bricolage Grotesque"), url("/dist/webfonts/BricolageGrotesque_.woff2") format("woff2");
 }
 /*@font-face {
   font-family: "Bricolage Grotesque";
@@ -172,6 +174,7 @@ h1 {
   margin-inline: 0;
   padding-inline: 0;
   justify-self: end;
+  font-size: var(--h1-sz);
 }
 
 h2, h3 {
@@ -186,6 +189,11 @@ h2 {
   border: var(--btn-bd);
   border-radius: 30px;
   direction: rtl;
+  font-size: var(--h2-sz);
+}
+
+h3 {
+  font-size: var(--h3-sz);
 }
 
 .wrapper {
@@ -199,7 +207,7 @@ h2 {
 
 p {
   font-family: "DINdong";
-  font-size: var(--h2-sz);
+  font-size: var(--p-sz);
   direction: rtl;
 }
 
@@ -262,12 +270,17 @@ p {
 }
 
 .content_section h2 {
-  justify-self: end;
+  align-self: end;
+}
+
+.content_section p {
+  width: 50%;
+  align-self: end;
 }
 
 .title_btn_style {
-  width: 100%;
-  justify-self: end;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .scroll_grid {
@@ -278,9 +291,8 @@ p {
 }
 
 .scroll_grid_img {
-  width: 45%;
-  border: 1px solid pink;
-  padding: 1rem;
+  width: 35%;
+  border-radius: 10px;
 }
 
 /*.grid-test {
@@ -296,10 +308,16 @@ p {
   max-width: 30%;
 }
 
+.scroll_grid_illu {
+  max-width: 25%;
+  border-radius: 10px;
+}
+
 form {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  align-items: end;
 }
 
 input {
@@ -352,4 +370,11 @@ footer {
   position: fixed;
   bottom: 1rem;
   right: 3rem;
+  opacity: 20%;
+  transition: all linear 200ms;
+}
+.fleche:hover {
+  opacity: 100%;
+  border-radius: 30px;
+  background-color: var(--main-color);
 }

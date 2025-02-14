@@ -4,9 +4,10 @@
   --main-color: #E6FF00;
   --pink-color: #FF00A2;
     
-  --h1-sz: 3rem;
-  --h2-sz: 1.5rem;
-  --h3-sz: 0.5rem;
+  --h1-sz: 3.5vw;
+  --h2-sz: 2.5vw;
+  --h3-sz: 1.5vw;
+  --p-sz: 2vw;
     
   --btn-pd: calc(var(--h3-sz) *2) var(--h2-sz); //vérifier valeurs padding
   --btn-rad: calc(var(--h2--sz) /10); //vérifier valeurs
