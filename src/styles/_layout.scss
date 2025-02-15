@@ -135,7 +135,7 @@ p {
   gap: 1rem;
   overflow-x: scroll;
   //scroll-snap-align: start;
-  //scroll-snap-type: mandatory;
+  scroll-snap-type: x mandatory;
 }
 
 .scroll_grid_img {
@@ -144,6 +144,7 @@ p {
   max-width: 744px;
   max-height: 438px;
   border-radius: 10px;
+  scroll-snap-align: start;
 }
 
 
@@ -161,6 +162,12 @@ p {
 // illu
 .scroll_grid_img_zines {
   max-width: 70%;
+  scroll-snap-align: start;
+
+}
+
+.scroll_grid_illu {
+  scroll-snap-align: start;
 }
 
 img.scroll_grid_illu {
