@@ -57,14 +57,14 @@ p {
   align-items: flex-start;
   &_item {
     font-family: "DINdong";
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
     margin-block-end: 0.5rem;
     padding-block: 0.3rem;
     padding-inline: 0.8rem;
     border: 1px solid var(--txt-color);
     border-radius: 30px;
-    background-color: var(--main-color);
+    //background-color: var(--main-color);
     &:hover {
       background-color: var(--bg-color);
       transition: all linear 200ms;
@@ -202,6 +202,15 @@ input {
 
 //media query tests 
 
+@media screen and (max-width: 380px){
+  .main__nav_list_item {
+    font-size: 0.5rem;
+    padding-block: 0.2rem;
+    padding-inline: 0.6rem;
+    margin-block-end: 0.3rem;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .main__nav_list {
     display: none;
@@ -215,5 +224,18 @@ input {
   }
   h3 {
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero__title {
+    font-size: var(--h1-sz);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hero__title {
+    font-size: calc(var(--h1-sz) /4 *3);
+    padding-inline-start: 1rem;
   }
 }

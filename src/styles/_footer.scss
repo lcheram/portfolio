@@ -28,8 +28,16 @@ footer {
 .main__footer__section a {
   font-family: "DINdong";
   font-size: 0.8rem;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
+@media screen and (max-width: 380px){
+  .main__footer__section__copyright p {
+    font-size: 0.5rem;
+  }
+}
 
 @media screen and (min-width: 600px) {
   .fleche { //je n'arrive pas à la cibler
