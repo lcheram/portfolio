@@ -200,10 +200,20 @@ input {
   margin-block-start: 4rem;
 }
 
+//media query tests 
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 600px) {
   .main__nav_list {
-    display: none;// ça qui ne marche pas, parce que l'opacité cible bien 
-    //opacity: 0%;
+    display: none;
+  }
+  .hero__para-second {
+    display: block; 
+    font-size: 1.5rem;
+  }
+  .submit {
+    align-self: end;
+  }
+  h3 {
+    font-size: 1rem;
   }
 }

@@ -67,14 +67,6 @@ header {
     }
   }
 
-.hero__para-second p {
-  display: block; // ne fonctionne pas non plus (voir au-dessus --> problème de ciblage ?
-}
-
-.main__nav_list {
-  display: none;
-}
-
 .sec__nav_list {
   display: flex; //ça marche
   }
@@ -88,10 +80,6 @@ header {
   h2 {
     font-size: 2rem;
   }
-}
-
-.submit {
-  justify-self: end;
 }
 
 }

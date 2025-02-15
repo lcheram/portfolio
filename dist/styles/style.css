@@ -133,12 +133,6 @@ header {
   .hero__para-second {
     display: block;
   }
-  .hero__para-second p {
-    display: block;
-  }
-  .main__nav_list {
-    display: none;
-  }
   .sec__nav_list {
     display: flex;
   }
@@ -151,9 +145,6 @@ header {
   }
   .content_section h2 {
     font-size: 2rem;
-  }
-  .submit {
-    justify-self: end;
   }
 }
 h1 {
@@ -340,9 +331,19 @@ input:focus {
   margin-block-start: 4rem;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 600px) {
   .main__nav_list {
     display: none;
+  }
+  .hero__para-second {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .submit {
+    align-self: end;
+  }
+  h3 {
+    font-size: 1rem;
   }
 }
 footer {
@@ -375,4 +376,19 @@ footer {
 .main__footer__section a {
   font-family: "DINdong";
   font-size: 0.8rem;
+}
+
+@media screen and (min-width: 600px) {
+  .fleche {
+    width: 5%;
+    bottom: 1rem;
+    right: 3rem;
+  }
+  .main__footer__section__copyright {
+    display: flex;
+    justify-content: center;
+  }
+  .main__footer__section__copyright p {
+    font-size: 1rem;
+  }
 }
