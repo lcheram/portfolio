@@ -5,25 +5,30 @@ header {
 }
 
 .star_fly {
-  position: absolute;
+  //position: absolute;
+  position: fixed;
   z-index: -1;
-  width: 40%;
-  right: -20%;
-  top: -35%;
+  width: 90%;
+  left: 5%;
+  top: 25%;
+  overflow-x: hidden;
+  opacity: 25%
+
 }
 
-.main__nav {
+.sec__nav {
   display: flex;
   justify-content: space-between;
   position: relative;
   &_logo {
     align-self: start;
+    max-width: 45%;
     margin-block-start: 1rem;
   }
 }
 
-.main__nav_list {
-  display: flex;
+.sec__nav_list {
+  display: none;
   flex-direction: column;
   justify-content: end;
   align-items: end;
@@ -45,55 +50,48 @@ header {
     }
   }
 }
-/*.main__nav {
-  display: flex;
-  justify-content: space-between;
-  &_logo {
-    padding-block: var(--h3-sz);
+
+// media query tests
+
+@media screen and (min-width: 600px) {
+  .hero {
+    &__title {
+      font-size: 4rem;
+    }
+    &__para {
+      font-size: 3.5rem;
+      max-width: 65%;
+      &-second { //ça ne marche pas, le paragraphe n'apparaît pas
+        display: block;
+      }
+    }
   }
-  &_list {
-    display: flex;
-    //display: none;
-    gap: var(--h3-sz);
-    justify-content: flex-end;
-    align-items: center;
+
+.hero__para-second p {
+  display: block; // ne fonctionne pas non plus (voir au-dessus --> problème de ciblage ?
+}
+
+.main__nav_list {
+  display: none;
+}
+
+.sec__nav_list {
+  display: flex; //ça marche
+  }
+
+.content_section {
+  width: 75%;
+  justify-self: end;
+  p {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 2rem;
   }
 }
 
-.btn_menu {
-  padding: var(--btn-pd);
-  border: var(--btn-bd);
-  border-radius: 5px;
+.submit {
+  justify-self: end;
 }
 
-/*.main__nav_item li {
-  &:hover {
-    background-color: var(--pink-color);
-    border: var(--btn-bdactivated);
-    transition: all 200ms linear;
-    a {
-      color: var(--main-color);
-    }
-  }
-}*/
-
-
-/*.btn_contact {
-  padding: var(--btn-pd);
-  border: var(--btn-bd);
-  //border-radius: var(--btn-rad); //ne fonctionne pas mais je ne sais pas pourquoi
-  border-radius: 5px;
-  &:hover {
-    background-color: var(--pink-color);
-    border: var(--btn-bdactivated);
-    transition: all 200ms linear;
-    a {
-      color: var(--main-color);
-    }
-  }
-}*/
-
-/*.main__nav a {
-  color: var(--text-color);
-  font-size: var(--h2-sz);
-}*/
+}
