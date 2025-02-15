@@ -325,7 +325,7 @@ input:focus {
 }
 
 .submit {
-  align-self: center;
+  align-self: end;
   margin-block-start: 4rem;
 }
 
@@ -336,27 +336,30 @@ input:focus {
     padding-inline: 0.6rem;
     margin-block-end: 0.3rem;
   }
+  .hero {
+    padding-block-end: 0;
+  }
 }
 @media screen and (min-width: 600px) {
   .main__nav_list {
     display: none;
   }
+  .hero__title {
+    font-size: var(--h1-sz);
+  }
   .hero__para-second {
     display: block;
     font-size: 1.5rem;
-  }
-  .submit {
-    align-self: end;
   }
   h3 {
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 700px) {
+/*@media screen and (min-width: 700px) {
   .hero__title {
     font-size: var(--h1-sz);
-  }
 }
+  }*/
 @media screen and (min-width: 1000px) {
   .hero__title {
     font-size: calc(var(--h1-sz) / 4 * 3);
