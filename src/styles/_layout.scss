@@ -50,7 +50,7 @@ p {
   direction: rtl;
 }
 
-.main__nav_list {
+.main__nav_list { //mobile nav
   display: flex;
   //display: none;
   flex-direction: column;
@@ -100,7 +100,7 @@ p {
   }
 }
 
-.hero__para p {
+.hero__para p { //ne voulait pas cibler au-dessus quand nesting
   font-family: "Bricolage Grotesque", arial;
 }
 
@@ -120,6 +120,10 @@ p {
 .content_section p {
     width: 90%;
     align-self: end;
+}
+
+.bold {
+  font-family: "Bricolage Grotesque";
 }
 
 .title_btn_style {
@@ -166,6 +170,15 @@ img.scroll_grid_illu {
 }
 
 // about me 
+/*.icons_img {
+  //gérer les icones pour du scroll horiz ? non, déjà dans la classe scroll_grid en fait, tout va bien 
+}*/
+.scroll_grid_icon { //revoir ces paramètres quand icones rajoutées 
+  scroll-snap-align: start;
+  max-width: 40px;
+  max-height: 60px;
+  border-radius: 5px;
+}
 
 // contact
 form {
@@ -230,15 +243,32 @@ input {
   }
 }
 
-/*@media screen and (min-width: 700px) {
-  .hero__title {
-    font-size: var(--h1-sz);
+
+@media screen and (min-width: 850px) {
+  //problème avec les illus qui ne scrollent plus en horizontal et j'ignore pourquoi
+  .scroll_grid {
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  .scroll_grid_img {
+    max-width: calc(744px /3*2);
+    max-height: calc(438px /3*2);
+  }
+  .scroll_grid_illu {
+    max-width: calc(744px /3*2);
+    max-height: calc(438px /3*2);
+  }
 }
-  }*/
+
 
 @media screen and (min-width: 1000px) {
   .hero__title {
-    font-size: calc(var(--h1-sz) /4 *3);
+    font-size: calc(var(--h1-sz) /7 *4);
     padding-inline-start: 1rem;
+    margin-block-end: 2rem;
   }
+  .content_section p {
+    width: 70%;
+    align-self: end;
+}
 }

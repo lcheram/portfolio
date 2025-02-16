@@ -6,7 +6,7 @@ footer {
 .fleche {
   width: 10%;
   position: fixed;
-  bottom: 1rem;
+  bottom: 0.5rem;
   right: 1rem;
   opacity: 20%;
   transition: all linear 200ms;
@@ -33,24 +33,40 @@ footer {
   }
 }
 
+.main__footer__section__copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.main__footer__section__copyright p {
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 380px){
   .main__footer__section__copyright p {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .fleche { //je n'arrive pas à la cibler
+  .fleche {
     width: 5%;
     bottom: 1rem;
     right: 3rem;
   }
 
-  .main__footer__section__copyright {
-    display: flex;
-    justify-content: center;
-  }
   .main__footer__section__copyright p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
+}
+
+@media screen and (min-width: 1000px) {
+  .main__footer__section__copyright p {
+    font-size: 0.5rem;
+  }
+  .fleche { 
+    width: 4%;
+    bottom: 1rem;
+    right: 2rem;
+}
 }
