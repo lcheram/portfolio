@@ -157,6 +157,11 @@ span {
 
 .only_mobile {
   display: block;
+  //max-width: 100px; //ne fonctionne pas
+}
+
+img .only_mobile {
+  max-width: 25%; //ne fonctionne pas 
 }
 
 // grid scroll img picture
@@ -298,8 +303,8 @@ input, textarea {
 
 @media screen and (min-width: 850px) {
   //problème avec les illus qui ne scrollent plus en horizontal because justify-content flex-end ... trouver un autre moyen de mettre les éléments à droite de l'écran 
-  .hero__para {
-    font-size: calc(var(--h2-sz));
+  p .hero__para {
+    font-size: var(--h2-sz); //trop grand
   }
 
   .scroll_grid {
@@ -348,13 +353,13 @@ input, textarea {
 
 @media screen and (min-width: 1000px) {
   .hero__title {
-    font-size: calc(var(--h1-sz) /7 *4);
+    font-size: calc(var(--h1-sz)/7*6);
     padding-inline-start: 1rem;
     margin-block-end: 2rem;
   }
 
-  .hero__para {
-    font-size: var(--h2-sz);
+  p .hero__para {
+    font-size: var(--h3-sz);
   }
   .content_section p {
     width: 70%;
