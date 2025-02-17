@@ -36,7 +36,20 @@ h3 {
   padding-inline: var(--h1-sz);
 }
 
+.back {
+  position: relative;
+}
 
+.fleche_back {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  border-radius: 200px;
+  transform: rotate(-90deg);
+  &:hover {
+    background-color: var(--main-color);
+  }
+}
 // hero ---
 
 .hero p {
