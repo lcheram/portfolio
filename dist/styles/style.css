@@ -363,7 +363,7 @@ label {
   margin-block-start: 1rem;
 }
 
-input {
+input, textarea {
   background-color: #f2fd8f;
   padding-block: 0.5rem;
   padding-inline: 1rem;
@@ -374,13 +374,19 @@ input {
   font-size: 1rem;
   color: var(--txt-color);
 }
-input:focus {
+input:focus, textarea:focus {
   background-color: var(--main-color);
 }
 
 .submit {
   align-self: end;
-  margin-block-start: 4rem;
+  margin-block-start: 2rem;
+  background-color: var(--main-color);
+  color: var(--txt-color);
+}
+.submit:hover {
+  background-color: var(--txt-color);
+  color: var(--pink-color);
 }
 
 @media screen and (max-width: 380px) {

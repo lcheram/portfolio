@@ -229,7 +229,7 @@ label {
   margin-block-start: 1rem;
 }
 
-input {
+input, textarea {
   background-color: #f2fd8f;
   padding-block: 0.5rem;
   padding-inline: 1rem;
@@ -246,7 +246,13 @@ input {
 
 .submit {
   align-self: end;
-  margin-block-start: 4rem;
+  margin-block-start: 2rem;
+  background-color: var(--main-color);
+  color: var(--txt-color);
+  &:hover {
+    background-color: var(--txt-color);
+    color: var(--pink-color);
+  }
 }
 
 //media query tests 
