@@ -322,6 +322,16 @@ input, textarea {
     margin-right: auto; //ne fonctionne pas : souci de selecteur 
   }
 
+  .scroll_grid_screens {
+    justify-content: start;
+  }
+  .scroll_grid_screens img:first-child {
+    margin-left: auto;
+  }
+  .scroll_grid_screens img:last-child {
+    margin-right: auto;
+  }
+
 .scroll_grid_illu {
   max-width: calc(744px /3*2);
   max-height: calc(438px /3*2);
@@ -351,3 +361,5 @@ input, textarea {
     align-self: end;
 }
 }
+
+//changer les images de screens ux ui dans index.html et media query quand au-dessus de 850 px allongés 

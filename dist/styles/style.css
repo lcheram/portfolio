@@ -445,6 +445,15 @@ input:focus, textarea:focus {
   .scroll_grid_illus img:last-child {
     margin-right: auto;
   }
+  .scroll_grid_screens {
+    justify-content: start;
+  }
+  .scroll_grid_screens img:first-child {
+    margin-left: auto;
+  }
+  .scroll_grid_screens img:last-child {
+    margin-right: auto;
+  }
   .scroll_grid_illu {
     max-width: 496px;
     max-height: 292px;
