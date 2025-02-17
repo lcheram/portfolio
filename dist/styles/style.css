@@ -270,6 +270,10 @@ p {
   width: fit-content;
 }
 
+.only_mobile {
+  display: block;
+}
+
 .scroll_grid {
   display: flex;
   justify-content: space-around;
@@ -305,13 +309,20 @@ img.scroll_grid_illu {
 /*.icons_img {
   //gérer les icones pour du scroll horiz ? non, déjà dans la classe scroll_grid en fait, tout va bien 
 }*/
-.scroll_grid_icon {
+.icons_img {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+}
+
+.scroll_grid_icon {
   scroll-snap-align: start;
   max-width: 20%;
   max-height: 20%;
   border-radius: 0;
+  margin-block-start: 2rem;
 }
 
 form {
@@ -368,11 +379,17 @@ input:focus {
     display: block;
     font-size: 1.5rem;
   }
+  .only_mobile {
+    display: none;
+  }
   h3 {
     font-size: 1rem;
   }
 }
 @media screen and (min-width: 850px) {
+  .hero__para {
+    font-size: calc(var(--h2-sz));
+  }
   .scroll_grid {
     justify-content: end;
     gap: 1rem;
@@ -405,6 +422,9 @@ input:focus {
     font-size: calc(var(--h1-sz) / 7 * 4);
     padding-inline-start: 1rem;
     margin-block-end: 2rem;
+  }
+  .hero__para {
+    font-size: var(--h2-sz);
   }
   .content_section p {
     width: 70%;
