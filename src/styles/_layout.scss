@@ -13,6 +13,12 @@ h1 {
   font-size: var(--h1-sz);
 }
 
+.normal {
+  margin-block-start: 4rem;
+  writing-mode: horizontal-tb;
+  transform: none;
+}
+
 h2, h3 {
   font-family: "Bricolage Grotesque";
   color: var(--txt-color);
@@ -62,6 +68,10 @@ p {
   font-family: "DINdong";
   font-size: var(--p-sz);
   direction: rtl;
+}
+
+span {
+  text-decoration: underline;
 }
 
 .main__nav_list { //mobile nav
