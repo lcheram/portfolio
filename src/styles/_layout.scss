@@ -42,10 +42,11 @@ h3 {
 
 .fleche_back {
   position: absolute;
-  left: 1rem;
-  top: 1rem;
+  left: -1rem;
+  top: 0.7rem;
   border-radius: 200px;
   transform: rotate(-90deg);
+  max-width: 30px;
   &:hover {
     background-color: var(--main-color);
   }
