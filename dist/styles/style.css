@@ -315,6 +315,12 @@ span {
   scroll-snap-align: start;
 }
 
+.scroll_grid_screens {
+  max-width: 186px;
+  border-radius: 10px;
+  scroll-snap-align: start;
+}
+
 .scroll_grid_img_zines {
   max-width: 70%;
   scroll-snap-align: start;
