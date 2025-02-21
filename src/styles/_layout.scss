@@ -128,6 +128,7 @@ span {
   font-family: "Bricolage Grotesque", arial;
 }
 
+
 // sections content h2 & p
 
 .content_section {
@@ -327,7 +328,7 @@ input, textarea {
     margin-right: auto; //ne fonctionne pas : souci de selecteur 
   }
 
-  .scroll_grid_screens {
+  .scroll_grid_screens_maxi {
     justify-content: start;
   }
   .scroll_grid_screens img:first-child {
@@ -353,14 +354,19 @@ input, textarea {
 
 @media screen and (min-width: 1000px) {
   .hero__title {
-    font-size: calc(var(--h1-sz)/7*6);
+    font-size: calc(var(--h1-sz)/7*5);
     padding-inline-start: 1rem;
     margin-block-end: 2rem;
   }
 
-  p .hero__para {
-    font-size: var(--h3-sz);
+  .hero__para {
+    font-size: calc(var(--h1-sz)/5*3)
   }
+
+#max-p {
+  font-size: calc(var(--h1-sz)/5*2)
+}
+
   .content_section p {
     width: 70%;
     align-self: end;

@@ -300,6 +300,10 @@ span {
   display: block;
 }
 
+img .only_mobile {
+  max-width: 25%;
+}
+
 .scroll_grid {
   display: flex;
   justify-content: space-around;
@@ -425,8 +429,8 @@ input:focus, textarea:focus {
   }
 }
 @media screen and (min-width: 850px) {
-  .hero__para {
-    font-size: calc(var(--h2-sz));
+  p .hero__para {
+    font-size: var(--h2-sz);
   }
   .scroll_grid {
     justify-content: end;
@@ -445,7 +449,7 @@ input:focus, textarea:focus {
   .scroll_grid_illus img:last-child {
     margin-right: auto;
   }
-  .scroll_grid_screens {
+  .scroll_grid_screens_maxi {
     justify-content: start;
   }
   .scroll_grid_screens img:first-child {
@@ -466,12 +470,15 @@ input:focus, textarea:focus {
 }
 @media screen and (min-width: 1000px) {
   .hero__title {
-    font-size: calc(var(--h1-sz) / 7 * 4);
+    font-size: calc(var(--h1-sz) / 7 * 5);
     padding-inline-start: 1rem;
     margin-block-end: 2rem;
   }
   .hero__para {
-    font-size: var(--h2-sz);
+    font-size: calc(var(--h1-sz) / 5 * 3);
+  }
+  #max-p {
+    font-size: calc(var(--h1-sz) / 5 * 2);
   }
   .content_section p {
     width: 70%;
