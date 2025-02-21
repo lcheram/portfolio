@@ -51,11 +51,11 @@ input, label {
 
 @font-face {
   font-family: "DINdong";
-  src: local("DINdong"), url("/dist/webfonts/DINdong.woff2") format("woff2");
+  src: local("DINdong"), url("/webfonts/DINdong.woff2") format("woff2");
 }
 @font-face {
   font-family: "Bricolage Grotesque";
-  src: local("Bricolage Grotesque"), url("/dist/webfonts/BricolageGrotesque_.woff2") format("woff2");
+  src: local("Bricolage Grotesque"), url("/webfonts/BricolageGrotesque_.woff2") format("woff2");
 }
 /*@font-face {
   font-family: "Bricolage Grotesque";
