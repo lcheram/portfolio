@@ -188,6 +188,9 @@ img .only_mobile {
   scroll-snap-align: start;
 }
 
+.ux-ui_screens img {
+  min-width: 50%;
+}
 // screens 
 
 // illu
@@ -298,6 +301,11 @@ input, textarea {
   h3 {
     font-size: 1rem;
   }
+
+  .ux-ui_div {
+    justify-content: end;
+  }
+
 }
 
 
@@ -311,6 +319,10 @@ input, textarea {
   .scroll_grid {
     justify-content:end;
     gap: 1rem;
+  }
+
+  .scroll_zines {
+    justify-content: start;
   }
   .scroll_grid_img {
     //justify-self: end; ne marche pas
@@ -371,6 +383,12 @@ input, textarea {
     width: 70%;
     align-self: end;
 }
+
+.scroll_zines {
+  justify-content: end;
 }
+
+}
+
 
 //changer les images de screens ux ui dans index.html et media query quand au-dessus de 850 px allongés 

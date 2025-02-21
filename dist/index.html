@@ -47,6 +47,7 @@
   </div>
   </section>
 
+    
   <section class="screens" id="ux-ui-design">
     <div class="content_section">
       <h2 class="title_btn_style">UX-UI Design</h2>
@@ -54,9 +55,9 @@
       <p>Here are my two first projects. Click on them to discover more about it on Behance</p>
     </div>
     
-    <div class="scroll_grid ux-ui_screens">
-      <a href="https://www.behance.net/gallery/214006973/Queer-cinema-UI-DESIGN"><img class="scroll_grid_img" src="images/cinemon_desktop.webp" alt="screens of cinemon project for desktop and mobile" oncontextmenu="return false"></a>
-      <a href="https://www.behance.net/gallery/217266365/Sweet-cauldron-an-herbalists-app"><img class="scroll_grid_img" src="images/sweet-cauldron-desktop.webp" alt="screens of the herbalist app project sweet cauldron" oncontextmenu="return false"></a>
+    <div class="scroll_grid ux-ui_div">
+      <a href="content/cinemon.html"><img class="scroll_grid_img ux-ui_screens" src="images/cinemon-all-screens.webp" alt="screens of cinemon project for desktop and mobile" oncontextmenu="return false"></a>
+      <a href="content/sweet_cauldron.html"><img class="scroll_grid_img ux-ui_screens" src="images/cauldron-img/cauldron-screens-all.webp" alt="screens of the herbalist app project sweet cauldron" oncontextmenu="return false"></a>
       <img class="scroll_grid_img" src="" alt="" oncontextmenu="return false">
     </div>
   </section>
@@ -84,7 +85,7 @@
     <p>My first zine is still in progress and will be about my experience as an art model. Here are the first pages</p>
     <p>Enjoy <3</p>
   </div>
-    <div class="grid-test scroll_grid">
+    <div class="scroll_grid scroll_zines">
       <!--<picture>
   <source media="(max-width: 600px)" srcset="images/fanzine1_mobile.webp" alt="couverture du zine, personne nue dessinée se tenant dans ses propres bras">
   <source media="(min-width: 1024px)" srcset="images/fanzine1_desktop.webp" alt="couverture du zine, personne nue dessinée se tenant dans ses propres bras">
@@ -122,15 +123,12 @@
   <section class="contact" id="form">
     <div class="content_section">
     <h2 class="title_btn_style">Contact me</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos libero a voluptatibus itaque incidunt! Eaque</p>
   </div>
   <div class="form"></div>
+  <p></p>
     <form action="" method="get">
-      <label for="fname">Name</label>
-      <input type="text" id="fname" name="fname" required pattern=".[^0-9$%£#@&§]{1,25}">
-      <label for="email">Email</label>
-      <input type="email" id="email" pattern=".+@example\.com" required placeholder="myemail@gmail.com"/>
-      <label for="message">Your message</label>
+      <input type="text" id="fname" name="fname" required pattern=".[^0-9$%£#@&§]{1,25}" placeholder="Your name">
+      <input type="email" id="email" pattern=".+@example\.com" required placeholder="youremail@gmail.com"/>
       <textarea id="message" name="message" rows="8" cols="20" placeholder="Writte your message here..."></textarea>
 
       <input class="submit" type="submit">
