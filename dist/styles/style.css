@@ -282,6 +282,12 @@ span {
   align-self: end;
 }
 
+.apparition {
+  opacity: 100%;
+  transform: translateY(-5px);
+  transition: all 1s ease-out;
+}
+
 .bold {
   font-family: "Bricolage Grotesque";
 }
