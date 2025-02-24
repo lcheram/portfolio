@@ -13,12 +13,11 @@ header {
   top: 25%;
   overflow-x: hidden;
   opacity: 25%
-
 }
 
 .active {
-  width: 120%;
-  opacity: 100%;
+  opacity: 40%;
+  transition: all 1s;
 }
 
 .sec__nav {
@@ -75,15 +74,6 @@ header {
   display: flex; //ça marche
   }
 
-.content_section {
-  width: 75%;
-  justify-self: end;
-  p {
-    font-size: 1.5rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-}
+
 
 }
