@@ -16,6 +16,11 @@ header {
 
 }
 
+.active {
+  width: 120%;
+  opacity: 100%;
+}
+
 .sec__nav {
   display: flex;
   justify-content: space-between;

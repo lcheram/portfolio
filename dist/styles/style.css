@@ -88,6 +88,11 @@ header {
   opacity: 25%;
 }
 
+.active {
+  width: 120%;
+  opacity: 100%;
+}
+
 .sec__nav {
   display: flex;
   justify-content: space-between;
@@ -157,6 +162,11 @@ h1 {
   padding-inline: 0;
   justify-self: end;
   font-size: var(--h1-sz);
+}
+
+.active {
+  width: 100%;
+  opacity: 100%;
 }
 
 .normal {
