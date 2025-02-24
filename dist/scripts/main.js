@@ -2,26 +2,24 @@
 
 window.addEventListener('scrollend', e => {
   $starfly.classList.toggle("active")
-});
-*/
-/*
-const $hero = document.querySelector('.hero')
-const $section = document.querySelector('.content_section')
-const $h2 = document.querySelectorAll('h2')
-const $p = document.querySelectorAll('p')
+});*/
 
-const $grid = document.querySelector('scroll_grid')
+const $hero = document.querySelectorAll('.hero')
+const $section = document.querySelectorAll('.content_section')
 
-/*visualViewport.addEventListener('scroll', e => {
-  $hero.classList.add('apparition')
-  $section.classList.add('apparition')
-})*/
-/*
-// ne fonctionne que sur la premier élément section
 onscroll = (event) => {
-  $hero.classList.add('apparition')
-  //$section.classList.add('apparition')
+    for (let h of $hero) {
+        console.log(h.classList)
+        h.classList.add('apparition')
+        console.log(h.classList)
+    }
+    for (let s of $section) {
+        s.classList.add('apparition')
+    }
+
 };
+
+/*
 
 $grid.addEventListener('click', e => {
   if($grid.contains('src')) {
