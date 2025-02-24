@@ -245,6 +245,7 @@ label {
 }
 
 input, textarea {
+  width: 90%;
   background-color: #f2fd8f;
   padding-block: 0.5rem;
   padding-inline: 1rem;
@@ -257,6 +258,11 @@ input, textarea {
   &:focus {
       background-color: var(--main-color);
   }
+}
+
+textarea {
+  resize: none;
+  margin: 0;
 }
 
 .submit {
@@ -304,6 +310,10 @@ input, textarea {
 
   .ux-ui_div {
     justify-content: end;
+  }
+
+  input, textarea {
+    width: 45%;
   }
 
 }

@@ -378,6 +378,7 @@ label {
 }
 
 input, textarea {
+  width: 90%;
   background-color: #f2fd8f;
   padding-block: 0.5rem;
   padding-inline: 1rem;
@@ -390,6 +391,11 @@ input, textarea {
 }
 input:focus, textarea:focus {
   background-color: var(--main-color);
+}
+
+textarea {
+  resize: none;
+  margin: 0;
 }
 
 .submit {
@@ -433,6 +439,9 @@ input:focus, textarea:focus {
   }
   .ux-ui_div {
     justify-content: end;
+  }
+  input, textarea {
+    width: 45%;
   }
 }
 @media screen and (min-width: 850px) {
