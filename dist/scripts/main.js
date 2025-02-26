@@ -19,6 +19,13 @@ onscroll = (event) => {
 
 };
 
+// évidemment ça reste pas après le click, donc je dois trouver un autre moyen pour que ça reste, mais d'est le toggle que je dois utiliser : changer la nature de l'évent ? 
+const $langagebtn = document.querySelector('.langue-btn')
+const $defaultbtn = document.querySelector('.default-btn')
+
+$langagebtn.addEventListener('click', e => {
+  $langagebtn.classList.toggle('default-btn')
+})
 /*
 
 $grid.addEventListener('click', e => {
