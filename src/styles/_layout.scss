@@ -68,6 +68,7 @@ p {
   font-family: "DINdong";
   font-size: var(--p-sz);
   direction: rtl;
+  line-height: 1.2;
 }
 
 span {
@@ -118,9 +119,12 @@ span {
     margin-block: 0;
     padding-block: 0;
     max-width: 100%;
+    line-height: normal;
+
     &-second {
       display: none;
       max-width: 55%;
+      line-height: 1.2;
     }
   }
 }
