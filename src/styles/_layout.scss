@@ -12,6 +12,17 @@ h1 {
   justify-self: end;
   font-size: var(--h1-sz);
 }
+.iframe-div {
+  display: flex;
+  justify-content: flex-end;
+  margin-block-end: 0;
+}
+
+iframe {
+  justify-self: flex-end;
+  max-width: 120%;
+  margin-block-end: 0;
+}
 
 .normal {
   margin-block-start: 4rem;
@@ -71,6 +82,7 @@ p {
   line-height: 1.2;
 }
 
+// span est utilisé sur les liens dans le texte
 span {
   text-decoration: underline;
 }
@@ -152,6 +164,7 @@ span {
     align-self: end;
 }
 
+// test class apparition de texte en scroll
 .apparition {
   opacity: 100%;
   transform: translateY(-5px);
@@ -242,7 +255,7 @@ img.scroll_grid_illu {
   border-radius: 0;
   margin-block-start: 2rem;
 }
-// contact
+// contact à relier php BdD
 form {
   //display: flex;
   display: none;
@@ -290,6 +303,7 @@ textarea {
 
 //media query tests 
 
+// rares tel de moins de 380px de large
 @media screen and (max-width: 380px){
   .main__nav_list_item {
     font-size: 0.7rem;
@@ -344,7 +358,7 @@ textarea {
 
 
 @media screen and (min-width: 850px) {
-  //problème avec les illus qui ne scrollent plus en horizontal because justify-content flex-end ... trouver un autre moyen de mettre les éléments à droite de l'écran 
+
   p .hero__para {
     font-size: var(--h2-sz); //trop grand
   }
@@ -380,7 +394,7 @@ textarea {
     margin-left: auto;
   }
   .scroll_grid_screens img:last-child {
-    margin-right: auto;
+    margin-right: auto; // margin regle le probleme de scroll horiz
   }
 
 .scroll_grid_illu {
